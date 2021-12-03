@@ -26,6 +26,20 @@ ThemeData getApplicatoinTheme (){
       shadowColor: ColorsManger.primaryOpacity70,
       titleTextStyle: getRegularStyle(color:ColorsManger.white, fontSize: FontSize.s16),
     ),
+    buttonTheme: ButtonThemeData(
+      shape: StadiumBorder(),
+      disabledColor: ColorsManger.grey1,
+      buttonColor: ColorsManger.primaryColor,
+      splashColor: ColorsManger.primaryOpacity70,
+    ),
+    elevatedButtonTheme: ElevatedButtonThemeData(
+      style:ElevatedButton.styleFrom(
+        textStyle: getRegularStyle(color:ColorsManger.white),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppSize.s12),
+        ),
+      ),
+    ),
 
   );
 }
