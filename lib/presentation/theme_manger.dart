@@ -40,6 +40,12 @@ ThemeData getApplicatoinTheme (){
         ),
       ),
     ),
+    textTheme:TextTheme(
+      headline1:getsemiboldStyle(color: ColorsManger.darkGrey,fontSize: FontSize.s16),
+      subtitle1: getmediumStyle(color: ColorsManger.lightgrey, fontSize: FontSize.s14),
+      caption: getRegularStyle(color: ColorsManger.grey1),
+      bodyText1: getRegularStyle(color:ColorsManger.grey1),
+    ),
 
   );
 }
