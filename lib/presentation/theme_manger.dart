@@ -44,8 +44,38 @@ ThemeData getApplicatoinTheme (){
       headline1:getsemiboldStyle(color: ColorsManger.darkGrey,fontSize: FontSize.s16),
       subtitle1: getmediumStyle(color: ColorsManger.lightgrey, fontSize: FontSize.s14),
       caption: getRegularStyle(color: ColorsManger.grey1),
-      bodyText1: getRegularStyle(color:ColorsManger.grey1),
-    ),
+      bodyText1: getRegularStyle(color:ColorsManger.grey1),),
+    //input decoration theme (text form field)
+    inputDecorationTheme: InputDecorationTheme(
+      contentPadding: EdgeInsets.all(AppPadding.p8),
+      hintStyle: getRegularStyle(color: ColorsManger.grey1),
+      labelStyle: getmediumStyle(color: ColorsManger.darkGrey),
+      errorStyle: getRegularStyle(color: ColorsManger.error),
+      enabledBorder: OutlineInputBorder(
+        //enabled border
+        borderSide: BorderSide(color:ColorsManger.grey,width: AppSize.s1_5),
+        borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),
 
-  );
+
+      ),
+      //focused border
+        focusedBorder: OutlineInputBorder(
+        borderSide: BorderSide(color:ColorsManger.primaryColor,width: AppSize.s1_5),
+        borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),
+
+      ),
+      //error border
+
+      errorBorder: OutlineInputBorder(
+      borderSide: BorderSide(color:ColorsManger.error,width: AppSize.s1_5),
+      borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),),
+
+    //focusedErrorBorder
+  focusedErrorBorder: OutlineInputBorder(
+  borderSide: BorderSide(color:ColorsManger.primaryColor,width: AppSize.s1_5),
+  borderRadius: BorderRadius.all(Radius.circular(AppSize.s8)),
+
+
+
+)  ));
 }
