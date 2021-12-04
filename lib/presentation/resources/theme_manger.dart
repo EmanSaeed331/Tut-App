@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tutapp/presentation/color_manger.dart';
-import 'package:tutapp/presentation/font_manger.dart';
-import 'package:tutapp/presentation/style_manger.dart';
-import 'package:tutapp/presentation/value_manger.dart';
+import 'package:tutapp/presentation/resources/color_manger.dart';
+import 'package:tutapp/presentation/resources/font_manger.dart';
+import 'package:tutapp/presentation/resources/style_manger.dart';
+import 'package:tutapp/presentation/resources/value_manger.dart';
 ThemeData getApplicatoinTheme (){
   return ThemeData(
     //main colors of the app
